@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social-Media Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e9d76e74f8.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+    <nav>
+        <div class="left-nav">
+            <img src="images/logo.png" alt="" class="logo">
+            <ul>
+                <li><img src="images/notification.png" alt=""></li>
+                <li><img src="images/inbox.png" alt=""></li>
+                <li><img src="images/video.png" alt=""></li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <div class="searchbox">
+                <img src="images/search.png">
+                <input type="text" placeholder="search">
+            </div>
+            <div class="user-profile-icon online" onclick="settingsMenuToggle()">
+                <img src="images/profile-pic.png">
+            </div>
+        </div>
+        <div class="settings-menu">
+
+
+            <div id="dark-light-btn" class="dark-btn-on">
+                <span></span>
+            </div>
+
+
+            <div class="settings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>Ali Adnan</p>
+                        <a href="#">Click to see your profile</a>
+                    </div>
+                </div>
+               <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Feedback</p>
+                        <a href="#">help us to improve the our Quality</a>
+                    </div>
+               </div>
+               <hr>
+
+
+               <div class="settings-links">
+                <img src="images/setting.png" class="settings-icons">
+                <a href="#">Setting & Privacy <img src="images/arrow.png" width="10px"></a>
+               </div>
+               <div class="settings-links">
+                <img src="images/help.png" class="settings-icons">
+                <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+               </div>
+               <div class="settings-links">
+                <img src="images/display.png" class="settings-icons">
+                <a href="#">Display & Accessbility <img src="images/arrow.png" width="10px"></a>
+               </div>
+               <div class="settings-links">
+                <img src="images/logout.png" class="settings-icons">
+                <a href="#">Log Out<img src="images/arrow.png" width="10px"></a>
+               </div>
+
+
+
+
+            </div>
+        </div>
+        
+    </nav>
+
+
+    <div class="container">
+        <!-- ---Left-sidebar--- -->
+        <div class="left-sidebar">
+            <div class="my-links">
+                <a href="#"><img src="images/news.png">Latest News</a>
+                <a href="#"><img src="images/friends.png">Friends</a>
+                <a href="#"><img src="images/group.png">Group</a>
+                <a href="#"><img src="images/marketplace.png">MarketPlace</a>
+                <a href="#"><img src="images/watch.png">Watch</a>
+                <a href="#">See More</a>
+            </div>
+            <div class="short-links">
+                <p>Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png">Web Developer</a>
+                <a href="#"><img src="images/shortcut-2.png">Web Designing Course</a>
+                <a href="#"><img src="images/shortcut-3.png">Full Stack Developer</a>
+                <a href="#"><img src="images/shortcut-4.png">Website Experts</a>
+            </div>
+        </div>
+        <!-- ---Main-Content--- -->
+        <div class="main-content">
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Upload Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Haseeb Abbas</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Hammad Rana</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Hashir Ali</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>Ali Adnan</p>
+                </div>
+            </div>
+
+
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>Ali Adnan</p>
+                        <small>Public <i class="fa-solid fa-sort-down"></i></small>
+                    </div>
+                </div>
+                    
+                <div class="post-input-container">
+                    <textarea rows="3" placeholder="What's on your mind, Ali"></textarea>
+                    <div class="add-post-links">
+                        <a href="#"><img src="images/live-video.png">Live Video</a>
+                        <a href="#"><img src="images/photo.png">Photo/Video</a>
+                        <a href="#"><img src="images/feeling.png">Feeling/Activity</a>
+                    </div>
+                </div>
+
+            </div>   
+            
+            
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Ali Adnan</p>
+                            <span>september 19, 2023 12:00pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Subcribe <span>@is_Al_everywhere</span> YouTube Channel for more amazing Web development video and UI Design <a href="#">#Is_Ali_everywhere</a> <a href="#">#YouTube Channel</a></p>
+                <img src="images/feed-image-1.png" class="post-image">
+
+                <div class="post-row">
+                    <div class="post-activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 20</div>
+                        <div><img src="images/share.png"> 10</div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Haseeb Abbas</p>
+                            <span>september 20, 2023 12:00pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Subcribe <span>@is_Al_everywhere</span> YouTube Channel for more amazing Web development video and UI Design <a href="#">#Is_Ali_everywhere</a> <a href="#">#YouTube Channel</a></p>
+                <img src="images/feed-image-2.png" class="post-image">
+
+                <div class="post-row">
+                    <div class="post-activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 20</div>
+                        <div><img src="images/share.png"> 10</div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Ali Adnan</p>
+                            <span>september 19, 2023 12:00pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Subcribe <span>@is_Al_everywhere</span> YouTube Channel for more amazing Web development video and UI Design <a href="#">#Is_Ali_everywhere</a> <a href="#">#YouTube Channel</a></p>
+                <img src="images/feed-image-3.png" class="post-image">
+
+                <div class="post-row">
+                    <div class="post-activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 20</div>
+                        <div><img src="images/share.png"> 10</div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Ali Adnan</p>
+                            <span>september 19, 2023 12:00pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Subcribe <span>@is_Al_everywhere</span> YouTube Channel for more amazing Web development video and UI Design <a href="#">#Is_Ali_everywhere</a> <a href="#">#YouTube Channel</a></p>
+                <img src="images/feed-image-4.png" class="post-image">
+
+                <div class="post-row">
+                    <div class="post-activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 20</div>
+                        <div><img src="images/share.png"> 10</div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="post-container">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Ali Adnan</p>
+                            <span>september 19, 2023 12:00pm</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">Subcribe <span>@is_Al_everywhere</span> YouTube Channel for more amazing Web development video and UI Design <a href="#">#Is_Ali_everywhere</a> <a href="#">#YouTube Channel</a></p>
+                <img src="images/feed-image-5.png" class="post-image">
+
+                <div class="post-row">
+                    <div class="post-activity-icons">
+                        <div><img src="images/like-blue.png"> 120</div>
+                        <div><img src="images/comments.png"> 20</div>
+                        <div><img src="images/share.png"> 10</div>
+                    </div>
+                    <div class="post-profile-icons">
+                        <img src="images/profile-pic.png"> <i class="fa-solid fa-sort-down"></i>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- ---Right-sidebar--- -->
+        <div class="right-sidebar">
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="">See All</a>
+            </div>
+
+
+            <div class="events">
+                <div class="left-events">
+                    <h3>18</h3>
+                    <span>November</span>
+                </div>
+                <div class="right-events">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-solid fa-location-dot"></i>Wilson Tech Park</p>
+                    <a href="#">See More</a>
+                </div>
+            </div>
+
+            
+            <div class="events">
+                <div class="left-events">
+                    <h3>01</h3>
+                    <span>February</span>
+                </div>
+                <div class="right-events">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-solid fa-location-dot"></i>Wilson Tech Park</p>
+                    <a href="#">See More</a>
+                </div>
+        </div>
+            <div class="sidebar-title">
+                <h4>Advertisements</h4>
+                <a href="">Close</a>
+            </div>
+            <img src="images/advertisement.png" class="side-add">
+           
+           
+           
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="">Hide Chat</a>
+            </div>
+            <div class="online-user">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                <p>Haseeb Abbas</p>
+            </div>
+            <div class="online-user">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                <p>Hammad Rana</p>
+            </div>
+            <div class="online-user">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                <p>Hashir Ali</p>
+            </div>
+            <div class="online-user">
+                <div class="online">
+                    <img src="images/member-4.png">
+                </div>
+                <p>Ali Adnan</p>
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
